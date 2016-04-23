@@ -12,7 +12,7 @@ exports.postClients = function(req, res) {
   client.secret = req.body.secret;
   client.userId = req.user._id;
 
-  // Save the client and check for errors
+  // Save the client and check for errors na
   client.save(function(err) {
     if (err)
       res.send(err);
